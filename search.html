@@ -103,7 +103,7 @@
                 </div>
               </div>
               <div class="col-sm-6 mb-3">
-                <div class="input-group input-group-sm shadow rounded">
+                <div class="input-group input-group-sm shadow rounded" id="input-location-container">
 
                   <!-- Text -->
                   <span class="input-group-text border-0 pe-1">
@@ -512,7 +512,7 @@
 
   <script>
     document.addEventListener("DOMContentLoaded", (event) => {
-      set_autocomplete('input-location', 'location-autocomplete', start_at_letters = 3, count_results = 3);
+      set_autocomplete('input-location', 'location-autocomplete', 'input-location-container', start_at_letters = 3, count_results = 5);
     });
 
   </script>
